@@ -31,5 +31,5 @@ För att klona en annans repo:
 - Byt namn på mappen i Path till medieinstutitet-grupp
 
 ![Steg 1](steg1.png)
-![Steg 3](steg3.png)
 ![Steg 2](steg2.png)
+![Steg 3](steg3.png)
