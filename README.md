@@ -21,3 +21,4 @@ Github:
 
 Inne på erat repository så finns det Settings. Där inne klickar ni på Collaborators och bjuder in er gruppmedlem så den kan se er kod.
 
+Bjud gärna in mig på användarnamn: Akdr
