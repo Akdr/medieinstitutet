@@ -22,3 +22,14 @@ Github:
 Inne på erat repository så finns det Settings. Där inne klickar ni på Collaborators och bjuder in er gruppmedlem så den kan se er kod.
 
 Bjud gärna in mig på användarnamn: Akdr
+
+För att klona en annans repo:
+- Använd github desktop
+- Klicka på Add
+- Ta länken via "Code" på github.com
+- Klistra in i URL rutan i Github Desktop
+- Byt namn på mappen i Path till medieinstutitet-grupp
+
+![Steg 1](steg1.png)
+![Steg 3](steg3.png)
+![Steg 2](steg2.png)
