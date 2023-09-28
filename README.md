@@ -25,8 +25,8 @@ Bjud gärna in mig på användarnamn: Akdr
 
 För att klona en annans repo:
 - Använd github desktop
-- Klicka på Add
-- Ta länken via "Code" på github.com
+- Klicka på Add -> Clone Repository
+- Ta länken  via "Code" på github.com
 - Klistra in i URL rutan i Github Desktop
 - Byt namn på mappen i Path till medieinstutitet-grupp
 
