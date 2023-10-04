@@ -17,7 +17,22 @@ Bonus:
 - Text om vardera medlem
 - Minst en commit per person i gruppen
 
-Github:
+## Gruppupgift 2
+
+Projektet ska innehålla (utöver Gruppuppgift 2):
+
+- 1 Javascript fil
+
+Projektet ska ha följande:
+
+- Lägg till en knapp som ändrar bakgrundsfärgen på sidan. 
+- Lägg till en enkel klocka som visar aktuell tid med hjälp av JavaScript. Ta hjälp av Date-objektet i Javascript.
+
+Bonus: 
+- Lägg till validering av kontaktformuläret med JavaScript så att fälten måste fyllas i korrekt innan det kan skickas. Validera att fälten är ifyllda.
+- Lägg till en "räkneverktyg"-funktion där användaren kan ange två tal och få summan visad på sidan.
+
+# Github:
 
 Inne på erat repository så finns det Settings. Där inne klickar ni på Collaborators och bjuder in er gruppmedlem så den kan se er kod.
 
