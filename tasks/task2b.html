@@ -1,0 +1,36 @@
+<!-- Generera ett slumpmässigt tal mellan 1-10 och spara i en variabel. 
+    Använd if/else för att skriva ut om talet är jämnt eller udda. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            // Hur många gånger får 3 plats i 2:
+            // En gång, men vi får 1 över.
+            // 3 % 2 = 1 
+            // 4 % 2 = 0
+            
+            // Skapa en funktion som ger tillbaka ett slumpmässigt heltal
+            function getRandomInt(max) {
+                // Tar ett slumpmässigt tal mellan 0 och 1, gångrar med max
+                // Rundar siffran till ett heltal, nedåt.
+                return Math.floor(Math.random() * max);
+            }
+
+            // Skapa ett slumpmässigt tal med hjälp av Math.random()
+            let randomNumber = getRandomInt(11);
+            console.log(randomNumber);
+
+            // Skapa en if-sats som säger om talet är jämnt eller udda.
+            // Om randomNumber modulus 2 inte lämnar något kvar, så är det jämt
+            if(randomNumber % 2 === 0){
+                console.log('Talet är jämnt!');
+            } else {
+                console.log('Talet är ojämnt!');
+                // Annars är det ett ojämnt tal
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+ </html>
