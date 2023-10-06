@@ -1,0 +1,47 @@
+<!--
+
+Bygg en enkel webbsida med följande element:
+En rubrik
+En knapp
+En div-container
+
+När man klickar på knappen ska följande hända:
+Bakgrundsfärgen på div-containern ska ändras till grön
+Texten i rubriken ska ändras till "Jag har ändrats!"
+
+
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            // Skapa en funktion som gör två saker: ändrar färg och ändrar text.
+            function clickFunction(){
+                // Hämta våran p tagg och spara den i en variabel
+                let ourText = document.querySelector("p");
+                // Hämta våran div via dens ID och sparar den i en variabel
+                let ourDiv = document.querySelector("#color-changer");
+
+                // Ändra bakrundsfärgen på ourDiv till grön
+                ourDiv.style.backgroundColor = "green";
+                // Ändra text på ourText till "Jag har ändrats!"
+                ourText.innerText = "Jag har ändrats";
+                // let ourTextValue = ourText.innerText
+            }
+            // Koppla denna funktion till onclick
+        </script>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Här är en text</p>
+        <button onclick="clickFunction()">Klicka här</button>
+        <div id="color-changer"></div>
+    </body>
+ </html>

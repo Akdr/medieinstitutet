@@ -4,11 +4,24 @@
         <head>
             <meta charset="UTF-8">
             <script>
-                // Skapa en funktion som delar upp en sträng i varje tecken
-                
-                // Skapa en variabel har datatypen string
+                // Skapa en funktion som delar upp en sträng i varje tecken  
+                function reverseString(originalString) {
+                    // Splitta strängen till respektive tecken och stoppa den i en array
+                    let returnString = '';
+                    let characters = originalString.split('');
+                    // characters = ['D','a','n','i','e','l'];
+                    // for(let i = 0; i < characters.length; i++)
+                    for(let i = characters.length-1; i >= 0; i--){
+                        // +=
+                        returnString += characters[i];
+                    }
 
+                    return returnString;
+                }
+                // Skapa en variabel har datatypen string
+                let name = 'Daniel';
                 // Skriva ut resultatet
+                console.log(reverseString(name));
             </script>
         </head>
         <body>
