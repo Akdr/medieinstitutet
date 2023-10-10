@@ -1,0 +1,49 @@
+<!--
+Bygg en webbsida med 3 knappar 
+- En för att dölja en bild, 
+- En för att visa bilden 
+- En för att ändra bildens bredd.
+-->
+
+<html>
+    <head>
+        <title>Image Website</title>
+        <script>     
+        window.addEventListener("load", (event) => { 
+            // Skapa en variabel för varje button
+            const hideButton = document.getElementById("hideButton");
+            const showButton = document.getElementById("showButton");
+            const widthButton = document.getElementById("widthButton");
+            // En funktion för att visa bilden
+            function showImage(){
+                const kitten = document.querySelector("img");
+                // Visa bilden
+                kitten.style.display = "block";
+            }
+            // En funktion för att dölja bilden
+            function hideImage(){
+                const kitten = document.querySelector("img");
+                // Dölj bilden
+                kitten.style.display = "none";
+            }
+            // En funktion för att ändra bildens bredd
+            function changeWidthImage(){
+                const kitten = document.querySelector("img");
+                // Ändra bredden på bilden
+                kitten.width = 350;
+            }
+            // Koppla en eventListener till varje button
+            hideButton.addEventListener("click", hideImage);
+            showButton.addEventListener("click", showImage);
+            widthButton.addEventListener("click", changeWidthImage);
+        });
+        </script>
+    </head>
+    <body>
+        <button id="hideButton">Dölja</button>
+        <button id="showButton">Visa</button>
+        <button id="widthButton">Ändra bildens bredd</button>
+        <img src="http://placekitten.com/500/800" 
+        width="250px" alt="A picture of a kitten"/>
+    </body>
+</html>
