@@ -1,49 +1,34 @@
 <!--
-Bygg en webbsida med 3 knappar 
-- En för att dölja en bild, 
-- En för att visa bilden 
-- En för att ändra bildens bredd.
+Lägg till 2-3 bilder till i HTML
+Ge dem unika id
+Uppdatera funktionerna så de kan dölja/visa en specifik bild baserat på id
 -->
 
 <html>
-    <head>
-        <title>Image Website</title>
-        <script>     
-        window.addEventListener("load", (event) => { 
-            // Skapa en variabel för varje button
-            const hideButton = document.getElementById("hideButton");
-            const showButton = document.getElementById("showButton");
-            const widthButton = document.getElementById("widthButton");
-            // En funktion för att visa bilden
-            function showImage(){
-                const kitten = document.querySelector("img");
-                // Visa bilden
-                kitten.style.display = "block";
-            }
-            // En funktion för att dölja bilden
-            function hideImage(){
-                const kitten = document.querySelector("img");
-                // Dölj bilden
-                kitten.style.display = "none";
-            }
-            // En funktion för att ändra bildens bredd
-            function changeWidthImage(){
-                const kitten = document.querySelector("img");
-                // Ändra bredden på bilden
-                kitten.width = 350;
-            }
-            // Koppla en eventListener till varje button
-            hideButton.addEventListener("click", hideImage);
-            showButton.addEventListener("click", showImage);
-            widthButton.addEventListener("click", changeWidthImage);
-        });
-        </script>
-    </head>
-    <body>
-        <button id="hideButton">Dölja</button>
-        <button id="showButton">Visa</button>
-        <button id="widthButton">Ändra bildens bredd</button>
-        <img src="http://placekitten.com/500/800" 
-        width="250px" alt="A picture of a kitten"/>
-    </body>
+
+<head>
+    <title>Image Website</title>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <button id="hideButton1">Dölja/Visa</button>
+        <button id="widthButton1">Ändra bildens bredd</button>
+        <img id="image1" src="http://placekitten.com/500/800" width="100px" alt="A picture of a kitten" />
+    </div>
+
+    <div>
+        <button id="hideButton2">Dölja/Visa</button>
+        <button id="widthButton2">Ändra bildens bredd</button>
+        <img id="image2" src="http://placekitten.com/100/200" width="100px" alt="A picture of a kitten" />
+    </div>
+
+    <div>
+        <button id="hideButton3">Dölja/Visa</button>
+        <button id="widthButton3">Ändra bildens bredd</button>
+        <img id="image3" src="http://placekitten.com/200/100" width="100px" alt="A picture of a kitten" />
+    </div>
+</body>
+
 </html>
