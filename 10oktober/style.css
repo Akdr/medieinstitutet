@@ -1,0 +1,60 @@
+button {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+img {
+    display: block;
+    margin: 20px;
+}
+
+div {
+    border: 1px solid black;
+    padding: 20px;
+    width: 150px;
+    margin: 10px;
+    min-height: 260px;
+    float: left;
+}
+/*
+ Hej
+*/
+@media only screen and (max-width: 500px) {
+    div {
+        width: 80vw;
+    }
+
+    img {
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    button {
+        margin-bottom: 3vh;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+
+    div {
+        min-height: 20px;
+        width: 80vw;
+    }
+
+    img {
+        display: none;
+    }
+
+    button {
+        margin-bottom: 3vh;
+        font-size: 12px;
+    }
+}
