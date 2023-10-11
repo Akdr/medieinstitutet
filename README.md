@@ -1,7 +1,9 @@
 # medieinstitutet
 
-## Gruppuppgift 1
-
+<details>
+<summary>
+Gruppuppgift 1
+</summary>
 Projektet ska innehålla:
 
 2 html filer som är länkade till varandra.
@@ -16,8 +18,11 @@ Bonus:
 - Kontaktformulär
 - Text om vardera medlem
 - Minst en commit per person i gruppen
-
-## Gruppupgift 2
+</details>
+<details>
+<summary>
+Gruppuppgift 2
+</summary>
 
 Projektet ska innehålla (utöver Gruppuppgift 2):
 
@@ -31,6 +36,52 @@ Projektet ska ha följande:
 Bonus: 
 - Lägg till validering av kontaktformuläret med JavaScript så att fälten måste fyllas i korrekt innan det kan skickas. Validera att fälten är ifyllda.
 - Lägg till en "räkneverktyg"-funktion där användaren kan ange två tal och få summan visad på sidan.
+</details>
+<details>
+<summary>
+Gemensamuppgift 1
+</summary>
+
+### Uppgift:
+
+Bygg en sida som visar en lista med djurbilder och fakta.
+
+### Funktionalitet:
+
+Hämta en array med djurobjekt i JavaScript (bild, namn, ålder, etc)
+Loopa arrayen och skapa HTML-element för varje djur
+Lägg till elementen i DOM:en
+Lägg till en click-lyssnare på varje djur
+När ett djur klickas, visa dennes fakta i en sidebar
+### Tekniker:
+
+#### HTML:
+
+Main för innehåll
+- Section för djurlistan
+- Aside för sidebar
+
+#### CSS:
+
+- Stila sidan med flexbox eller CSS grid
+- Style för aktivt djur
+
+#### JavaScript:
+
+- Array med djurobjekt
+- for-loop för att skapa HTML-element
+- appendChild för att lägga till i DOM
+- addEventListener för klick
+- innerHTML eller textContent för att uppdatera sidebar
+- Detta övar på att kombinera de olika teknikerna och skapa en interaktiv sida med dynamiskt innehåll. 
+
+Börja med att planera uppdelningen och flödet.
+</details>
+
+<details>
+<summary>
+Github
+</summary>
 
 # Github:
 
@@ -48,3 +99,4 @@ För att klona en annans repo:
 ![Steg 1](steg1.png)
 ![Steg 2](steg2-2.png)
 ![Steg 3](steg3.png)
+</details>
