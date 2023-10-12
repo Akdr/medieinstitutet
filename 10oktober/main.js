@@ -58,7 +58,17 @@ function changeImageFunction(){
                 return this.src;
             },
             headlineText: "Collage av katter",
-            descriptionText: "Här ser vi sex stycken katter"
+            descriptionText: "Här ser vi sex stycken katter",
+            button: {
+                backgroundColor: "orange"
+            },
+            container: {
+                border: "3px solid grey"
+            },
+            getSrcAsBackground: function() {
+                // url("Katt.jpg")
+                return "url(" + this.src + ")";
+            }
         },
         {
             src: "Lion.jpg",
@@ -67,7 +77,17 @@ function changeImageFunction(){
                 return this.src;
             },
             headlineText: "Lejonet är kungen på savannen",
-            descriptionText: "Vi har en stolt lejonhanne på savannen, akta er!"
+            descriptionText: "Vi har en stolt lejonhanne på savannen, akta er!",
+            button: {
+                backgroundColor: "orange"
+            },
+            container: {
+                border: "5px solid orange"
+            },
+            getSrcAsBackground: function() {
+                // url("Katt.jpg")
+                return "url(" + this.src + ")";
+            }
         },
         {
             src: "Uggla.jpg",
@@ -76,7 +96,17 @@ function changeImageFunction(){
                 return this.src;
             },
             headlineText: "Ugglan vilar",
-            descriptionText: "Ugglan vilar på en pinne denna vinterdag"
+            descriptionText: "Ugglan vilar på en pinne denna vinterdag",
+            button: {
+                backgroundColor: "white"
+            },
+            container: {
+                border: "3px dotted black"
+            },
+            getSrcAsBackground: function() {
+                // url("Katt.jpg")
+                return "url(" + this.src + ")";
+            }
         },
     ];
 
@@ -98,7 +128,34 @@ function changeImageFunction(){
     // Sätta texten till den valda objectets headline och description
     headline.innerText = choosenImage.headlineText;
     description.innerText = choosenImage.descriptionText;
+
+    const allButtons = document.querySelectorAll("button");
+    
+    // Loopa igenom alla buttons och sätt bakgrundsfärgen 
+    // till choosenImage.button.backgroundColor
+    allButtons.forEach(function(button){
+        button.style.backgroundColor = choosenImage.button.backgroundColor;
+    });
+
+    // const container = document.querySelector("div");
+    // container.style.border = choosenImage.container.border;
+    document.querySelector("div").style.border = choosenImage.container.border;
+
+    // Ändra bakgrunden i body-taggen till den bild vi har valt
+    const bodyElement = document.querySelector("body");
+    bodyElement.style.backgroundImage = choosenImage.getSrcAsBackground();
+    //background-repeat: no-repeat
+    //background-cover: cover | contain;
+    bodyElement.style.backgroundSize = "100%";
+    //bodyElement.style.backgroundRepeat = "no-repeat";
 }
+
+const timer = setInterval(showHideImage, 1000);
+function stopTimer(){
+    clearInterval(timer);
+}
+
+document.querySelector("#headline").addEventListener("click", stopTimer);
 // Koppla en eventListener till varje button
 hideButton.addEventListener("click", showHideImage);
 widthButton.addEventListener("click", changeWidthImage);
