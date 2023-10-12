@@ -48,11 +48,11 @@ Bygg en sida som visar en lista med djurbilder och fakta.
 
 ### Funktionalitet:
 
-Hämta en array med djurobjekt i JavaScript (bild, namn, ålder, etc)
-Loopa arrayen och skapa HTML-element för varje djur
-Lägg till elementen i DOM:en
-Lägg till en click-lyssnare på varje djur
-När ett djur klickas, visa dennes fakta i en sidebar
+- Hämta en array med djurobjekt i JavaScript (bild, namn, ålder, etc)
+- Loopa arrayen och skapa HTML-element för varje djur
+- Lägg till elementen i DOM:en
+- Lägg till en click-lyssnare på varje djur
+- När ett djur klickas, visa dennes fakta i en sidebar
 ### Tekniker:
 
 #### HTML:
