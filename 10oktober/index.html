@@ -1,8 +1,7 @@
 <!--
-Ändra bild slumpmässigt
-- Lägg till en array med bildfiler i JavaScript
-- Välj slumpmässig bild från arrayen
-- Sätt bildens src attribut till den slumpade bilden
+- Lägg till text och stilar baserat på vilken bild som visas
+- Lägg till rubrik och brödtext till sidan
+- Styla med CSS (färger, typsnitt, layout)
 -->
 
 <html>
@@ -16,6 +15,11 @@
 <body>
     <button id="changeImage">Byt bild</button>
     <div>
+        <h1 id="headline">Katt på äventyr</h1>
+        <p id="description">
+            Här nedan visas en bild på en katt. 
+            Den byts ut med jämna mellanrum
+        </p>
         <button id="hideButton1">Dölja/Visa</button>
         <button id="widthButton1">Ändra bildens bredd</button>
         <img id="image1" src="http://placekitten.com/500/800" width="100px" alt="A picture of a kitten" />

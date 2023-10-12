@@ -1,8 +1,7 @@
 /*
-Ändra bild slumpmässigt
-- Lägg till en array med bildfiler i JavaScript
-- Välj slumpmässig bild från arrayen
-- Sätt bildens src attribut till den slumpade bilden
+- Lägg till text och stilar baserat på vilken bild som visas
+- Lägg till rubrik och brödtext till sidan
+- Styla med CSS (färger, typsnitt, layout)
 */
 
 // Skapa en variabel för varje button
@@ -57,21 +56,27 @@ function changeImageFunction(){
             alt: "Sex stycken söta katter",
             getSrc: function(){
                 return this.src;
-            }
+            },
+            headlineText: "Collage av katter",
+            descriptionText: "Här ser vi sex stycken katter"
         },
         {
             src: "Lion.jpg",
             alt: "Skräckinjagande lejon",
             getSrc: function(){
                 return this.src;
-            }
+            },
+            headlineText: "Lejonet är kungen på savannen",
+            descriptionText: "Vi har en stolt lejonhanne på savannen, akta er!"
         },
         {
             src: "Uggla.jpg",
             alt: "Uggla som sitter på en pinne",
             getSrc: function(){
                 return this.src;
-            }
+            },
+            headlineText: "Ugglan vilar",
+            descriptionText: "Ugglan vilar på en pinne denna vinterdag"
         },
     ];
 
@@ -86,6 +91,13 @@ function changeImageFunction(){
     // Sätt kitten.src till den valda objectets src
     kitten.src = choosenImage.getSrc();
     kitten.alt = choosenImage.alt;
+
+    // Skapa en variabel för H1 och P
+    const headline = document.getElementById("headline");
+    const description = document.getElementById("description");
+    // Sätta texten till den valda objectets headline och description
+    headline.innerText = choosenImage.headlineText;
+    description.innerText = choosenImage.descriptionText;
 }
 // Koppla en eventListener till varje button
 hideButton.addEventListener("click", showHideImage);
