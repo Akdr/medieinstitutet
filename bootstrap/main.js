@@ -52,7 +52,15 @@ function showSidebar(event){
     const animalClass = splitClass[2].split("-");
     // animal-1 => ["animal", "1"];
     const animalPosition = animalClass[1];
-    console.log(animalPosition);
+
+    const asideHeadline = document.querySelector("h2");
+    const asideDescription = document.querySelector("aside > p");
+    
+    const currentAnimal = zoo[animalPosition];
+
+    // Stoppa in species och longDesc i sidebaren
+    asideHeadline.innerText = currentAnimal.species;
+    asideDescription.innerText = currentAnimal.longDescription;
 }
 
 // Skapa en array med alla våra djur. Varje djur är ett object.
